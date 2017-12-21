@@ -10,6 +10,13 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    lazy var myLabel: UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        
+        return label
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
